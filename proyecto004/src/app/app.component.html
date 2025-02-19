@@ -1,0 +1,10 @@
+<div>
+  <!-- Usamos Property Binding para pasar valores a los componentes hijos -->
+  <app-dado [valor]="valor1"></app-dado>
+  <app-dado [valor]="valor2"></app-dado>
+  <app-dado [valor]="valor3"></app-dado>
+  <hr>
+  <p>{{resultado}}</p>
+  <hr>
+  <button (click)="lanzarDados()">Lanzar</button>
+</div>
