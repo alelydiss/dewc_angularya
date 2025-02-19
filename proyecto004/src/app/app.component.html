@@ -1,10 +1,18 @@
-<div>
-  <!-- Usamos Property Binding para pasar valores a los componentes hijos -->
-  <app-dado [valor]="valor1"></app-dado>
-  <app-dado [valor]="valor2"></app-dado>
-  <app-dado [valor]="valor3"></app-dado>
-  <hr>
-  <p>{{resultado}}</p>
-  <hr>
-  <button (click)="lanzarDados()">Lanzar</button>
+<div class="container text-center mt-5">
+  <h2 class="mb-4">Juego de Dados</h2>
+
+  <div class="d-flex justify-content-center gap-3">
+    <!-- Usamos Property Binding para pasar valores a los componentes hijos -->
+    <app-dado [valor]="valor1" class="border p-3 rounded"></app-dado>
+    <app-dado [valor]="valor2" class="border p-3 rounded"></app-dado>
+    <app-dado [valor]="valor3" class="border p-3 rounded"></app-dado>
+  </div>
+
+  <hr class="my-4">
+
+  <p class="fs-4 fw-bold">{{resultado}}</p>
+
+  <hr class="my-4">
+
+  <button class="btn btn-primary btn-lg" (click)="lanzarDados()">Lanzar</button>
 </div>
