@@ -8,7 +8,7 @@ import { DadoComponent } from './dado/dado.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'proyecto_dado_autonomo';
+  title = 'Juego dados';
 
   @ViewChild('dado1') midado1!:DadoComponent;
   @ViewChild('dado2') midado2!:DadoComponent;

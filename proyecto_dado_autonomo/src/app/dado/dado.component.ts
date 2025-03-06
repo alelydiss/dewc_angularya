@@ -26,4 +26,8 @@ export class DadoComponent implements OnInit {
     return Math.floor(Math.random() * 6) + 1;
   }
 
+  getImageDado() {
+    return `imagenes/dado${this.valor}.png`;
+  }
+
 }
